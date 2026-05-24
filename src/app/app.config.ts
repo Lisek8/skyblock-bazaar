@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { TranslocoHttpLoader } from './transloco-loader';
 import { provideTransloco } from '@jsverse/transloco';
+import { providePreloadLanguage } from '../shared/initializers/preload-language/preload-language';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,11 +16,10 @@ export const appConfig: ApplicationConfig = {
       config: {
         availableLangs: ['en'],
         defaultLang: 'en',
-        // Remove this option if your application doesn't support changing language in runtime.
-        reRenderOnLangChange: false,
         prodMode: !isDevMode(),
       },
       loader: TranslocoHttpLoader,
     }),
+    providePreloadLanguage(),
   ],
 };

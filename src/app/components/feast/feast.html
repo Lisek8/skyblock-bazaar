@@ -1,0 +1,32 @@
+<h1 class="header">Feast</h1>
+
+<div class="item-list overflow-y-auto">
+  @for (item of feastItemList(); track $index) {
+  <article class="card flex flex-col p-3 gap-2">
+    <div class="flex flex-row items-center gap-2">
+      <img class="card-icon" [src]="item.iconHref">
+
+      <div class="card-header">
+        {{ item.label }}
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1">
+      <div class="flex flex-row gap-2 items-center">
+        <div class="icon icon-sell" title="Sell price"></div>
+        <span>
+          {{ item.sellPrice | number:numberFormat }}
+        </span>
+      </div>
+
+      <div class="flex flex-row gap-2 items-center">
+        <div class="icon icon-buy" title="Buy price"></div>
+        <span>
+          {{ item.buyPrice | number:numberFormat }}
+        </span>
+      </div>
+
+    </div>
+  </article>
+  }
+</div>

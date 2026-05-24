@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'tailwindcss';
+@use 'scss/theme';
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  display: block;
+  height: 100dvh;
+  background: var(--sb-bg-app);
+  color: var(--sb-text);
+}

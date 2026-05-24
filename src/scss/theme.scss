@@ -1,0 +1,26 @@
+body {
+  // Primary
+  --sb-primary: var(--color-purple-900);
+  --sb-primary-hover: var(--color-purple-700);
+  --sb-primary-active: var(--color-purple-800);
+
+  // Background
+  --sb-bg-app: var(--color-slate-950);
+  --sb-bg-card: var(--color-slate-900);
+  --sb-bg-card-secondary: var(--color-slate-800);
+
+  // Text color
+  --sb-text: var(--color-slate-100);
+
+  // Typography
+  --sb-typography-header: 1.125rem;
+  --sb-typography-header-secondary: 1rem;
+  --sb-typography-paragraph: 0.875rem;
+  --sb-typography-secondary: 0.75rem;
+
+  // Border radius
+  --sb-border-radius-md: 0.375rem;
+
+  --sb-rose: var(--color-rose-700);
+  --sb-green: var(--color-green-700);
+}

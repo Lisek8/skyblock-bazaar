@@ -1,0 +1,31 @@
+.sidebar {
+  background: var(--sb-primary);
+}
+
+.menu-item {
+  $menu-item-size: 3.5rem;
+
+  width: $menu-item-size;
+  height: $menu-item-size;
+  border-radius: var(--sb-border-radius-md);
+
+  &-active {
+    background-color: var(--sb-primary-active);
+  }
+
+  &:hover {
+    background-color: var(--sb-primary-hover);
+  }
+
+  img {
+    $img-size: 2rem;
+
+    width: $img-size;
+    height: $img-size;
+  }
+
+  span {
+    font-size: var(--sb-typography-secondary);
+    font-weight: 500;
+  }
+}

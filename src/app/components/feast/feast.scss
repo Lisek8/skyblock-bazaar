@@ -50,12 +50,12 @@
     height: $icon-size;
 
     &-sell {
-      mask-image: url('/icons/sell.svg');
+      mask-image: url('icons/sell.svg');
       background-color: var(--sb-green);
     }
 
     &-buy {
-      mask-image: url('/icons/buy.svg');
+      mask-image: url('icons/buy.svg');
       background-color: var(--sb-rose);
     }
   }

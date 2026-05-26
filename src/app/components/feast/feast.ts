@@ -66,7 +66,7 @@ export class Feast implements OnInit {
 
           return {
             label: feastItemId.toLowerCase().replaceAll('_', ' '),
-            iconHref: `/icons/feast/${feastItemId.toLowerCase()}.png`,
+            iconHref: `./icons/feast/${feastItemId.toLowerCase()}.png`,
             buyPrice: feastItemData.quick_status.buyPrice,
             sellPrice: feastItemData.quick_status.sellPrice,
           }
